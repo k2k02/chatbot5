@@ -10,6 +10,19 @@
   <properties>
     <tomcat.version>7.0.57</tomcat.version>
   </properties>
+  <repositories>
+    <!--other repositories if any-->
+    <repository>
+        <id>project.local</id>
+        <name>project</name>
+        <url>file:${project.basedir}/libs</url>
+    </repository>
+     <repository>
+        <id>project.local1</id>
+        <name>project</name>
+        <url>file:${project.basedir}/programab/lib</url>
+    </repository>
+</repositories>
   <dependencies>
     <dependency>
         <groupId>org.apache.tomcat.embed</groupId>
