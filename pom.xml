@@ -13,14 +13,12 @@
   <repositories>
     <!--other repositories if any-->
     <repository>
-        <id>project.local</id>
-        <name>project</name>
-        <url>file:${project.basedir}/libs</url>
+        <id>localrepository1</id>
+        <url>file://${basedir}/repo</url>
     </repository>
      <repository>
-        <id>project.local1</id>
-        <name>project</name>
-        <url>file:${project.basedir}/programab/lib</url>
+        <id>localrepository2</id>
+        <url>file://${basedir}/repo</url>
     </repository>
 </repositories>
   <dependencies>
@@ -55,16 +53,14 @@
         <version>${tomcat.version}</version>
     </dependency>
     <dependency>
-        <groupId>com.Ab</groupId>
+        <groupId>com</groupId>
         <artifactId>Ab</artifactId>
         <version>1.0</version>
-        <scope>compile</scope>
     </dependency>
     <dependency>
-        <groupId>com.jsr311-api-1.1.1</groupId>
-        <artifactId>jsr311-api-1.1.1</artifactId>
+        <groupId>com</groupId>
+        <artifactId>jsr311</artifactId>
         <version>1.1.1</version>
-        <scope>compile</scope>
     </dependency>
   </dependencies>
   <build>
